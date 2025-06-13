@@ -1,5 +1,63 @@
-# Vue 3 + Vite
+# Vue3 + Express + Vite E-commerce проект
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Описание
+Проект интернет-магазина, разработанный с использованием Vue 3, Express и Vite. Включает в себя функционал корзины, авторизации, каталога товаров и административную панель.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Требования
+- Node.js (версия 14 или выше)
+- MySQL (версия 5.7 или выше)
+- npm или yarn
+
+## Установка и настройка
+
+1. Клонируйте репозиторий:
+```bash
+git clone https://github.com/Dmitry114172/vue-express-vite.git
+cd vue-express-vite
+```
+
+2. Установите зависимости:
+```bash
+npm install
+```
+
+3. Настройте базу данных:
+- Создайте новую базу данных MySQL
+- Импортируйте файл `db2.sql` в вашу базу данных
+- Настройте параметры подключения к базе данных в файле `server/database.js`
+
+4. Запустите проект в режиме разработки:
+```bash
+npm run start
+```
+
+## Структура проекта
+```
+├── src/                    # Исходный код Vue приложения
+│   ├── components/        # Vue компоненты
+│   ├── controller/        # Контроллеры для работы с API
+│   ├── store/            # Хранилище состояния (Pinia)
+│   └── router/           # Маршрутизация
+├── server/                # Серверная часть (Express)
+│   ├── database.js       # Конфигурация базы данных
+│   ├── goods.js          # API для товаров
+│   └── users.js          # API для пользователей
+└── public/               # Статические файлы
+```
+
+## Основные функции
+- Каталог товаров с фильтрацией
+- Корзина покупок
+- Авторизация и регистрация
+- Административная панель
+- Поиск товаров
+- Категории товаров
+
+## Технологии
+- Frontend: Vue 3, Vite, Pinia
+- Backend: Express.js
+- База данных: MySQL
+- Стилизация: CSS
+
+## Контакты
+По всем вопросам обращайтесь: st_dmitrii@mail.ru
